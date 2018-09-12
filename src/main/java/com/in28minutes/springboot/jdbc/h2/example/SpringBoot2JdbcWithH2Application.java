@@ -25,6 +25,8 @@ public class SpringBoot2JdbcWithH2Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
+		int index;
+
 		logger.info("Student id 10001 -> {}", repository.findById(10001L));
 
 		logger.info("Inserting -> {}", repository.insert(new Student(10010L, "John", "A1234657")));
