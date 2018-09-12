@@ -29,6 +29,8 @@ public class SpringBoot2JdbcWithH2Application implements CommandLineRunner {
 
 		logger.info("Inserting -> {}", repository.insert(new Student(10010L, "John", "A1234657")));
 
+		logger.info("Inserting -> {}", repository.insert(new Student(10011L, "Katy", "B1234645")));
+
 		logger.info("Update 10003 -> {}", repository.update(new Student(10001L, "Name-Updated", "New-Passport")));
 
 		repository.deleteById(10002L);
